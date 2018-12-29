@@ -1,4 +1,4 @@
-package DataStr
+package main
 
 import (
 	"fmt"
@@ -73,4 +73,11 @@ func IndexOf(ele string, seq []string) int {
 	}
 
 	panic("IndexOf错误，元素不存在")
+}
+
+func main() {
+	bt := PreMid2Tree([]string{"A", "B", "D", "G", "H", "C", "E", "I", "F"},
+		[]string{"G", "D", "H", "B", "A", "E", "I", "C", "F"})
+
+	PostOrderRec(bt)
 }

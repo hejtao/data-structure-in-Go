@@ -1,4 +1,4 @@
-package DataStr
+package main
 
 import (
 	"fmt"
@@ -42,4 +42,25 @@ func (this *BiLinkList) InsertNext(p *Node, e string) {
 		p.next = s
 	}
 	this.length++
+}
+
+func main() {
+	head := &Node{}
+	bl := NewBiLinkList(head)
+
+	bl.Append("1")
+	bl.Append("2")
+	bl.Append("3")
+
+	bl.InsertNext(head.next.next, "2.5")
+
+	//for i := 0; i < bl.length; i++ {
+	//	fmt.Print(head.next.data, "  ")
+	//	head = head.next
+	//}
+
+	for node := bl.head; node.next != nil; node = node.next {
+		fmt.Print(node.data, "  ")
+	}
+	fmt.Print(bl.rear.data) //打印末节点
 }

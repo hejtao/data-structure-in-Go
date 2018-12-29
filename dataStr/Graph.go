@@ -1,4 +1,4 @@
-package dataStr
+package DataStr
 
 var flag []bool //全局变量，用于深度优先遍历
 

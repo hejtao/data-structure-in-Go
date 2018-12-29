@@ -1,4 +1,4 @@
-package dataStr
+package DataStr
 
 type Stack struct { //用于存放 int 的 栈
 	nums []int

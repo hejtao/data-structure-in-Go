@@ -1,4 +1,4 @@
-package dataStr
+package DataStr
 
 type Queue struct { //Queue 是用于存放 int 的队列
 	nums []int
